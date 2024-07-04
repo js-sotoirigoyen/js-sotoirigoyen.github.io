@@ -1,49 +1,98 @@
-/* css/styles.css */
+/* General styles */
 body {
     font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
 }
 
 .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header h1 {
+    float: left;
+    margin-top: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+    background: #50b3a2;
+    color: #fff;
+    padding: 2em 0;
     text-align: center;
-    padding: 2em;
-    background-color: #fff;
-    border-radius: 10px;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+/* Blog posts section styles */
+#posts {
+    padding: 2em 0;
+}
+
+#posts article {
+    background: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+#posts h3 {
+    margin-top: 0;
 }
 
-p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
+/* About section styles */
+#about {
+    padding: 2em 0;
+    background: #eee;
+    text-align: center;
 }
 
-.progress {
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 1em;
-}
-
-.progress-bar {
-    width: 50%; /* Change this value to represent progress */
-    height: 20px;
-    background-color: #4caf50;
-}
-
+/* Footer styles */
 footer {
-    margin-top: 2em;
-    font-size: 0.9em;
-    color: #666;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+footer a {
+    color: #50b3a2;
+    text-decoration: none;
 }
